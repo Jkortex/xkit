@@ -1,0 +1,117 @@
+[
+  {
+    "memo_uuid": "8be3489e-36be-4adb-b3af-a1096a79f08f",
+    "content": "分层架构取舍：坚持 Application/Presentation 分离，避免 Hook 直接依赖基础设施细节",
+    "tags": ["Architecture", "Layering", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "fdb9f5b1-2fa7-4461-a952-58dc38d59f95",
+    "content": "身份边界设计：放弃隐式上下文注入 user_id，改为显式参数传递",
+    "tags": ["Architecture", "Security", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "6f808c78-5e87-4d99-a876-80f183d2ea78",
+    "content": "鉴权方案权衡：选择 Session Cookie 而非 JWT，多账号切换能力后置",
+    "tags": ["Auth", "Security", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "49cb0ed6-2f80-41f9-b91b-ce7f53053d90",
+    "content": "数据隔离策略：认证上线后从共享数据模型切换为按用户作用域",
+    "tags": ["Isolation", "Architecture", "Risk"]
+  },
+  {
+    "memo_uuid": "4cc4d6fd-7340-41a0-96c7-1e89f8d6948e",
+    "content": "迁移策略选择：开发阶段允许清理历史数据，换取隔离模型快速收敛",
+    "tags": ["Migration", "Tradeoff", "Delivery"]
+  },
+  {
+    "memo_uuid": "ac8d1d42-f14d-4e3c-9c53-c8f1388fd705",
+    "content": "幂等导入设计：采用幂等可重试替代单事务全回滚",
+    "tags": ["Import", "Idempotency", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "57f688c6-edf6-4b84-84d3-c43b45f1e3f4",
+    "content": "标识符决策：不使用自增 id 作为跨库主语义，采用稳定 UUID 业务键",
+    "tags": ["DataModel", "UUID", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "d61df33e-f1c4-4337-838f-8758cf478e1b",
+    "content": "UUID 性能权衡：接受索引局部性损失，优先跨设备一致身份",
+    "tags": ["Database", "Performance", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "6a25b2e0-e6f4-4b90-b25f-c62fbc6bd3d7",
+    "content": "标签治理演进：先做 rename/merge/alias/audit 四件套，再考虑规则引擎",
+    "tags": ["Tag", "Governance", "Roadmap"]
+  },
+  {
+    "memo_uuid": "1226f0a6-0bd4-4a35-b2de-cad2f49dc75a",
+    "content": "前端状态策略：事件投影优先、接口回源兜底，减少无效请求",
+    "tags": ["Frontend", "Projection", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "ce5fbadb-0d10-4387-8911-6ab1e57da9ea",
+    "content": "热键系统定位：放在 presentation/application 边界层，避免与业务耦合",
+    "tags": ["Hotkeys", "Architecture", "Boundary"]
+  },
+  {
+    "memo_uuid": "d4c6f874-52af-4fef-b00f-97cc0817c819",
+    "content": "模式系统取舍：实现 Normal/Insert/Command，而非完整 Vim",
+    "tags": ["UX", "Productivity", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "2a31a582-f514-4afb-b17f-89eec6f1ff43",
+    "content": "组件化策略：高复用抽到 layer，低复用保持就地实现",
+    "tags": ["Frontend", "Maintainability", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "3712f5b8-3582-42f7-a340-18384b13b23c",
+    "content": "测试策略：优先 lint+vue-tsc+targeted go test，避免每次全量构建",
+    "tags": ["Testing", "DX", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "6b24891e-1ccc-4ddb-9f41-df7f9f4568d6",
+    "content": "安全可观测性：管理员关键操作必须带 request_id 并可审计",
+    "tags": ["Audit", "Observability", "Security"]
+  },
+  {
+    "memo_uuid": "fcf89571-1692-49f5-a687-720f4acc2f35",
+    "content": "会话安全策略：Cookie 默认 HttpOnly+SameSite=Lax，HTTPS 自动 Secure",
+    "tags": ["Security", "Cookie", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "e6d9eb58-3f01-4dc2-bc2c-cf532f206c6e",
+    "content": "发布治理：增加 Runbook 与预发布清单，把可运行升级为可运维",
+    "tags": ["Ops", "Release", "Reliability"]
+  },
+  {
+    "memo_uuid": "f86d4dc3-e4ed-43e2-839e-5e765011ad00",
+    "content": "前端体验权衡：多账号切换先做最近用户名+浏览器自动填充",
+    "tags": ["Auth", "UX", "Security"]
+  },
+  {
+    "memo_uuid": "420e3fab-f15d-4419-9fb0-2d6ac7fcf966",
+    "content": "演进原则：先建立稳定安全基线，再做体验增强",
+    "tags": ["Strategy", "Architecture", "Tradeoff"]
+  },
+  {
+    "memo_uuid": "d966b2f9-5410-46e2-98e7-2ef3367d0f7b",
+    "content": "后续方向：在隔离边界稳定后，再推进更细粒度权限模型",
+    "tags": ["Roadmap", "Security", "Architecture"]
+  },
+  {
+    "memo_uuid": "91f3b4f0-5a6d-44c2-a1dc-2c44e7d6a9b1",
+    "content": "# Markdown 演示：项目决策记录\n\n> 目标：让种子数据直接覆盖常见 Markdown 渲染场景。\n\n## 核心结论\n\n- 先保证隔离边界稳定\n- 再推进权限模型细化\n- 最后做跨端体验增强\n\n## 参考链接\n\n- [架构文档](./docs/architecture.md)\n- [发布检查清单](./docs/ops/pre_release_checklist.md)",
+    "tags": ["Markdown", "Demo", "Decision"]
+  },
+  {
+    "memo_uuid": "2b9dbf4f-8f0a-4e1b-9f7a-0d2b1c6f55a4",
+    "content": "## Markdown 演示：代码块 + SQL\n\n```go\nfunc ensureSession(cookie string) error {\n  if strings.TrimSpace(cookie) == \"\" {\n    return errors.New(\"session required\")\n  }\n  return nil\n}\n```\n\n```sql\nSELECT id, role, expires_at\nFROM auth_invite\nWHERE revoked_at IS NULL\nORDER BY created_at DESC\nLIMIT 20;\n```\n\n结论：邀请码列表查询优先走索引字段，避免全表扫描。",
+    "tags": ["Markdown", "Demo", "Code"]
+  },
+  {
+    "memo_uuid": "f24d93f8-4cf7-4d73-9d57-f3f6b03adf33",
+    "content": "## Markdown 演示：任务列表 + 表格\n\n- [x] 完成 Session 鉴权\n- [x] 完成用户数据隔离\n- [ ] 增加细粒度权限\n\n| 方案 | 优点 | 风险 |\n| --- | --- | --- |\n| Session Cookie | 服务端可控、易吊销 | 需要会话存储 |\n| JWT | 无状态、扩展简单 | 撤销与失效策略更复杂 |\n\n---\n\n最终采用：**Session Cookie**，并保留后续扩展空间。",
+    "tags": ["Markdown", "Demo", "Checklist"]
+  }
+]

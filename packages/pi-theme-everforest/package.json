@@ -1,0 +1,22 @@
+{
+  "name": "@xkit/pi-theme-everforest",
+  "version": "0.1.0",
+  "description": "🌿 高对比 Everforest 护眼主题，人体工学设计，适合长时间编码",
+  "keywords": [
+    "everforest",
+    "eye-friendly",
+    "pi-package",
+    "pi-theme"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starpi/xkit.git"
+  },
+  "type": "module",
+  "pi": {
+    "themes": [
+      "./themes"
+    ]
+  }
+}

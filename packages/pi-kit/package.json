@@ -1,0 +1,31 @@
+{
+  "name": "@xkit/pi-kit",
+  "version": "0.1.0",
+  "description": "🧰 pi 工具包 — 安全保护、daily memo、并行执行等实用扩展合集",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starpi/xkit.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/safe-run.ts",
+      "./extensions/daily.ts",
+      "./extensions/parallel.ts"
+    ],
+    "skills": [
+      "../skills"
+    ]
+  }
+}

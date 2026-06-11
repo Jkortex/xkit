@@ -1,0 +1,29 @@
+# Binaries
+server/bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Local Data
+data/
+server/data/
+server/data/daily.db
+
+# Dependencies
+node_modules/
+.pnpm-debug.log
+
+# Build Outputs
+web/dist/
+server/internal/infrastructure/api/static/dist/
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+.env.local

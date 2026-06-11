@@ -1,0 +1,48 @@
+{
+  "name": "xkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint .",
+    "fmt": "oxfmt . --check",
+    "fmt:fix": "oxfmt . --write",
+    "typecheck": "vue-tsc --noEmit --project packages/daily/web/tsconfig.app.json",
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "build:hotkeys": "pnpm --filter @xkit/hotkeys build",
+    "test:web": "pnpm --filter web test",
+    "test:hotkeys": "pnpm --filter @xkit/hotkeys test",
+    "test:cli": "tsx scripts/server.mts test-cli",
+    "xkit": "tsx scripts/server.mts",
+    "ci": "tsx scripts/ci.mts",
+    "web-check": "tsx scripts/web-check.mts"
+  },
+  "dependencies": {
+    "@xkit/scripts": "link:packages/scripts"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^25.9.1",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vitest/ui": "^4.1.7",
+    "@vue/test-utils": "^2.4.10",
+    "@vue/tsconfig": "^0.9.1",
+    "esbuild": "^0.28.0",
+    "happy-dom": "^20.9.0",
+    "jsdom": "^29.1.1",
+    "oxfmt": "^0.52.0",
+    "oxlint": "^1.57.0",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.3",
+    "typebox": "*",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14",
+    "vite-plugin-dts": "^5.0.1",
+    "vitest": "^4.1.7",
+    "vue-tsc": "^3.3.2"
+  },
+  "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a"
+}

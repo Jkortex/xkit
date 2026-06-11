@@ -1,0 +1,23 @@
+packages:
+  - packages/*
+  - '!packages/pi-*'
+  - packages/daily/web
+
+allowBuilds:
+  '@github/keytar': true
+  '@google/genai': true
+  esbuild: true
+  msgpackr-extract: true
+  node-pty: true
+  opencode-ai: true
+  protobufjs: true
+
+minimumReleaseAgeExclude:
+  - vue-router@5.1.0
+
+onlyBuiltDependencies:
+  - esbuild
+  - msgpackr-extract
+
+overrides:
+  '@xkit/scripts': link:packages/scripts

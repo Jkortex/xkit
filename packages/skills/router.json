@@ -1,0 +1,256 @@
+{
+  "skills": [
+{
+      "name": "api-design",
+      "path": "./api-design/SKILL.md",
+      "description": "设计稳定、一致、不易误用的外部 API 契约（REST, GraphQL, RPC）。",
+      "triggers": [
+        "design API",
+        "API contract",
+        "REST endpoint",
+        "define API",
+        "接口设计",
+        "API 设计"
+      ]
+    },
+    {
+      "name": "arch-depth",
+      "path": "./arch-depth/SKILL.md",
+      "description": "分析浅模块并提出深层重构建议。在代码难以测试、难以导航或每次修改波及过多文件时使用。",
+      "triggers": [
+        "improve architecture",
+        "refactor",
+        "deepen this",
+        "shallow module",
+        "架构优化",
+        "重构",
+        "模块太浅"
+      ]
+    },
+    {
+      "name": "code-cleanup",
+      "path": "./code-cleanup/SKILL.md",
+      "description": "在不改变行为的情况下简化代码，降低复杂度，移除死代码。",
+      "triggers": ["simplify", "clean up", "refactor", "复杂", "简化", "清理"]
+    },
+    {
+      "name": "code-review",
+      "path": "./code-review/SKILL.md",
+      "description": "合并前的多维度代码审查，涵盖正确性、可读性、架构、安全性和性能。",
+      "triggers": [
+        "review",
+        "code review",
+        "review this",
+        "CR",
+        "代码审查",
+        "review一下"
+      ]
+    },
+    {
+      "name": "debug-fix",
+      "path": "./debug-fix/SKILL.md",
+      "description": "系统化调试——在尝试任何修复之前先找到根本原因。",
+      "triggers": [
+        "bug",
+        "debug",
+        "broken",
+        "failing",
+        "error",
+        "不工作",
+        "报错",
+        "有问题",
+        "排查"
+      ]
+    },
+    {
+      "name": "deprecate-migrate",
+      "path": "./deprecate-migrate/SKILL.md",
+      "description": "安全地移除旧代码、API或系统，保证永远不破坏调用方。",
+      "triggers": [
+        "deprecate",
+        "migrate",
+        "remove",
+        "sunset",
+        "弃用",
+        "迁移",
+        "下线"
+      ]
+    },
+    {
+      "name": "find-skills",
+      "path": "./find-skills/SKILL.md",
+      "description": "帮助用户在开放技能生态中发现和安装 Agent 技能。",
+      "triggers": [
+        "how do I do",
+        "find a skill",
+        "is there a skill",
+        "install skill",
+        "安装技能",
+        "查找技能"
+      ]
+    },
+    {
+      "name": "git-workflow",
+      "path": "./git-workflow/SKILL.md",
+      "description": "分支、提交、合并、变基及冲突解决规范，保持历史整洁可追溯。",
+      "triggers": [
+        "git",
+        "commit",
+        "branch",
+        "merge",
+        "rebase",
+        "提交",
+        "分支",
+        "合并"
+      ]
+    },
+    {
+      "name": "grill-me",
+      "path": "./grill-me/SKILL.md",
+      "description": "对抗式的方案或计划评审，防止遗漏设计死角。",
+      "triggers": [
+        "grill me",
+        "prove me wrong",
+        "what am I missing",
+        "拷问",
+        "忽略了",
+        "怎么样"
+      ]
+    },
+    {
+      "name": "idea-refine",
+      "path": "./idea-refine/SKILL.md",
+      "description": "在概念尚不清晰时，通过发散和收敛思维细化模糊的想法。",
+      "triggers": ["idea", "brainstorm", "ideate", "想法", "点子", "头脑风暴"]
+    },
+    {
+      "name": "module-interface",
+      "path": "./module-interface/SKILL.md",
+      "description": "设计高内聚、易测试且不易误用的内部模块边界与接口。",
+      "triggers": [
+        "module interface",
+        "internal API",
+        "component boundary",
+        "模块接口",
+        "解耦",
+        "边界设计"
+      ]
+    },
+    {
+      "name": "performance-tune",
+      "path": "./performance-tune/SKILL.md",
+      "description": "瓶颈识别、优化与验证。无基准测试，不进行优化。",
+      "triggers": [
+        "performance",
+        "slow",
+        "optimize",
+        "bottleneck",
+        "性能",
+        "优化",
+        "慢"
+      ]
+    },
+    {
+      "name": "pre-push",
+      "path": "./pre-push/SKILL.md",
+      "description": "推送前的本地检查清单（Lint、类型检查、测试、日志）。",
+      "triggers": ["ship", "pre-push", "push", "准备提交", "合并", "pre-commit"]
+    },
+    {
+      "name": "req-doc",
+      "path": "./req-doc/SKILL.md",
+      "description": "将模糊的想法梳理成结构化、可读的软件需求规格说明书（PRD）。",
+      "triggers": [
+        "requirement",
+        "需求",
+        "我要做一个",
+        "帮我理一下需求",
+        "我想实现",
+        "need a feature"
+      ]
+    },
+    {
+      "name": "security-review",
+      "path": "./security-review/SKILL.md",
+      "description": "安全审查——在发布前发现潜在的注入、越权等漏洞。",
+      "triggers": [
+        "security",
+        "harden",
+        "vulnerability",
+        "安全",
+        "漏洞",
+        "加固"
+      ]
+    },
+    {
+      "name": "source-driven-dev",
+      "path": "./source-driven-dev/SKILL.md",
+      "description": "基于官方源码或文档驱动开发，拒绝凭空猜测 API 用法。",
+      "triggers": [
+        "source driven",
+        "check docs",
+        "official docs",
+        "according to spec",
+        "查文档",
+        "官方文档"
+      ]
+    },
+    {
+      "name": "spec-to-plan",
+      "path": "./spec-to-plan/SKILL.md",
+      "description": "将复杂需求细化为清晰的 Spec 与增量开发计划。",
+      "triggers": [
+        "write a spec",
+        "plan this",
+        "spec this out",
+        "scope this",
+        "break this down",
+        "设计一下",
+        "规划一下",
+        "写个方案",
+        "拆解",
+        "先规划"
+      ]
+    },
+    {
+      "name": "tdd",
+      "path": "./tdd/SKILL.md",
+      "description": "测试驱动开发（TDD）循环：先写失败测试，编写最简代码使之通过，然后在绿灯下重构。",
+      "triggers": [
+        "TDD",
+        "red-green",
+        "test first",
+        "write test",
+        "测试先行",
+        "先写测试"
+      ]
+    },
+    {
+      "name": "critique",
+      "path": "./critique/SKILL.md",
+      "description": "针对代码实现的合理性、复杂度及过度设计进行对抗式审计与质疑。",
+      "triggers": [
+        "critique",
+        "question implementation",
+        "是否合理",
+        "合理性",
+        "质疑实现",
+        "是不是写太复杂了",
+        "过度设计"
+      ]
+    },
+    {
+      "name": "handoff",
+      "path": "./handoff/SKILL.md",
+      "description": "将当前会话的上下文、决策和后续计划压缩整理为交接文档，便于新会话或其它 subagent 承接。",
+      "triggers": [
+        "handoff",
+        "session transfer",
+        "交接",
+        "工作交接",
+        "保存会话",
+        "生成交接文档"
+      ]
+    }
+  ]
+}
